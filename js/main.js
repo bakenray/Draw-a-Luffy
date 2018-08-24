@@ -36,7 +36,6 @@ function writeCode(code,fn){
     },duration)
 }
 
-
 var cssCode = 
 `
 /*下面开始画一个琦玉老师版的路飞...*/
@@ -49,6 +48,7 @@ var cssCode =
 
 /*再添加一个动画效果*/
 .pre-box{
+    -webkit-animation:breath 1s infinite;
     animation:breath 1s infinite;
 }
 @keyframes breath{
@@ -153,10 +153,11 @@ var cssCode =
 
 /*画眉毛*/
 .eyebrow{ 
+    border:1px solid transparent;
     border-top:1px solid #000;
     width:18%;
     height:18%;
-      border-radius:50%/35%;
+    border-radius:50%/35%;
     position:absolute;
     top:24%;
     }
@@ -188,12 +189,13 @@ var cssCode =
      width: 40%;
      height: 90%;
      border-radius: 60%;
+     border:1px solid transparent;
      border-left: 2px solid #000;
      position: absolute;
      top: 90%;
      left: 84%;
      transform: rotate(-20deg);
-     box-shadow: -3px 0 2px #c39674;
+     box-shadow: -2px 0 1px #c39674;
     }
 
 /*画路飞脸上伤疤*/ 
@@ -255,6 +257,7 @@ var cssCode =
       width:95%;
       height:60%;
       border-radius:100%;
+      border:1px solid transparent;
       border-bottom:1px solid #000;
       position:absolute;
       top:0;
@@ -354,7 +357,7 @@ var cssCode =
     border:1px solid #000; 
     z-index:-3;
     }
-.ear.left{
+    .ear.left{
     left:12%;
     border-top-left-radius:100% 100%;
     border-top-right-radius:0 0; 
@@ -401,7 +404,39 @@ var cssCode =
     border:1px solid #000;
     }
 
-/*画头发 光头路飞看够了....*/
+    /*画帽子*/
+.hat{
+    width:110%;
+    height:65%;
+    position: absolute;
+    top:2%;
+    left:-7%;
+    background-color: #c69c64;
+    border: 1px solid black;
+    box-shadow: 
+      inset 30px 0 0 #daad73, 
+      inset -30px 0 0 #daad73, 
+      inset 0 5px 0 #ddac70, 
+      inset 0 -20px 0 #d4a56b, 
+      inset 70px 0 0 #d8a76c;
+    z-index:-4;
+    border-radius:50%;
+    }
+    
+/*画帽子前沿*/  
+.hat-front{
+    width:94%;
+    height:70%;
+    position: absolute;
+    top:-1%;
+    left:5%;
+    background:transparent;
+    border-top:20px solid #c69c64;
+    border-radius:180%;
+    box-shadow: inset 0 10px #d8a76c;
+    }
+
+/*画头发*/
 .hair{
     width:100%;
     height:48%;
@@ -551,38 +586,6 @@ var cssCode =
     left:30%;
     transform:rotate(15deg);
     z-index:-3;
-    }
-
-/*画帽子*/
-.hat{
-    width:110%;
-    height:65%;
-    position: absolute;
-    top:2%;
-    left:-7%;
-    background-color: #c69c64;
-    border: 1px solid black;
-    box-shadow: 
-      inset 30px 0 0 #daad73, 
-      inset -30px 0 0 #daad73, 
-      inset 0 5px 0 #ddac70, 
-      inset 0 -20px 0 #d4a56b, 
-      inset 70px 0 0 #d8a76c;
-    z-index:-4;
-    border-radius:50%;
-    }
-
-/*画帽子前沿*/  
-.hat-front{
-    width:94%;
-    height:70%;
-    position: absolute;
-    top:-1%;
-    left:5%;
-    background:transparent;
-    border-top:20px solid #c69c64;
-    border-radius:180%;
-    box-shadow: inset 0 10px #d8a76c;
     }
 
 /*画衣服*/    
