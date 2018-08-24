@@ -80,7 +80,6 @@ var cssCode =
 
 /*添加一个背景色*/
 .circle-bg{
-    position:absolute;
     top:0;
     right:0%;
     width:100%;
@@ -91,7 +90,6 @@ var cssCode =
 
 /*开始画头部*/
 .head{
-    position:absolute;
     top:0;
     right:50%;
     width:60%;
@@ -117,7 +115,6 @@ var cssCode =
       width: 16%;
       height: 14%;
       background: #fff;
-      position: absolute;
       border-radius: 48% 52%;
       top: 27%;
       border-top: 1px solid #000;
@@ -158,7 +155,6 @@ var cssCode =
     width:18%;
     height:18%;
     border-radius:50%/35%;
-    position:absolute;
     top:24%;
     }
 /*调整眉毛位置*/
@@ -175,7 +171,6 @@ var cssCode =
 
 /*画鼻子*/ 
 .nose{
-    position:absolute;
     left:50%;
     top:43%;
     width:15%;
@@ -184,18 +179,19 @@ var cssCode =
     border-right:1px solid #000;
     }
 .nose::after{
-     content: '';
-     display: block;
-     width: 40%;
-     height: 90%;
-     border-radius: 60%;
-     border:1px solid transparent;
-     border-left: 2px solid #000;
-     position: absolute;
-     top: 90%;
-     left: 84%;
-     transform: rotate(-20deg);
-     box-shadow: -2px 0 1px #c39674;
+    content: '';
+    display: block;
+    width: 2vmin;
+    height: 2vmin;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    position: absolute;
+    top: 96%;
+    left: 84%;
+    transform: rotate(-40deg);
+    box-shadow: -2px 0 1px #c39674;
     }
 
 /*画路飞脸上伤疤*/ 
@@ -205,7 +201,6 @@ var cssCode =
     border-radius:50%;
     border:1px solid transparent; 
     border-bottom-color:#000;
-    position:absolute;
     top:36%;
     left:55%;
     transform:rotate(-8deg); 
@@ -246,7 +241,6 @@ var cssCode =
       border-bottom-left-radius: 45% 80%;
       border-bottom-right-radius: 45% 80%; 
       border:1px solid #000; 
-      position:absolute;
       top:54%;
       left:30%;
       background:#fff;
@@ -271,7 +265,6 @@ var cssCode =
       width:5%;
       height:15%;
       border-left:1px solid #000;
-      position:absolute;
       border-radius:30%;
       top:45%;
       left:32%;
@@ -282,7 +275,6 @@ var cssCode =
       width:5%;
       height:35%;
       border-left:1px solid #000;
-      position:absolute;
       border-radius:30%;
       top:27%;
       left:49%;
@@ -293,7 +285,6 @@ var cssCode =
       width:5%;
       height:22%;
       border-left:1px solid #000;
-      position:absolute;
       border-radius:30%;
       top:38%;
       left:65%;
@@ -304,7 +295,6 @@ var cssCode =
       width:5%;
       height:16%;
       border-left:1px solid #000;
-      position:absolute;
       border-radius:30%;
       top:55%;
       left:20%;
@@ -315,7 +305,6 @@ var cssCode =
       width:5%;
       height:10%;
       border-left:1px solid #000;
-      position:absolute;
       border-radius:30%;
       top:55%;
       left:80%;
@@ -326,7 +315,6 @@ var cssCode =
     width:18%;
     height:25%;
     background: #dcae8b;
-    position:absolute;
     top:60%;
     left:48%;
     margin-left:-6.5%;
@@ -351,7 +339,6 @@ var cssCode =
     width:20%;
     height:22%;
     border:1px solid red;
-    position:absolute;
     top:25%;
     background:#daae8c;
     border:1px solid #000; 
@@ -408,7 +395,6 @@ var cssCode =
 .hat{
     width:110%;
     height:65%;
-    position: absolute;
     top:2%;
     left:-7%;
     background-color: #c69c64;
@@ -427,7 +413,6 @@ var cssCode =
 .hat-front{
     width:94%;
     height:70%;
-    position: absolute;
     top:-1%;
     left:5%;
     background:transparent;
@@ -592,7 +577,6 @@ var cssCode =
 .clothes{
     width:120%;
     height:60%;
-    position: absolute;
     top:76%;
     left:-8%;
     border-radius:40%;
@@ -606,7 +590,6 @@ var cssCode =
 .chest{
     width:30%;
     height:60%;
-    position: absolute;
     top:75%;
     left:35.5%;
     border-radius:40%;
@@ -642,7 +625,6 @@ var cssCode =
 .mark{
     width:5%;
     height:25%;
-    position: absolute;
     top:90%;
     left:54%;
     border:1px solid #000;
